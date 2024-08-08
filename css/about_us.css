@@ -1,0 +1,345 @@
+@charset "utf8";
+
+/* webfont */
+@font-face {
+    font-family: 'Cafe24Simplehae';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+ul,
+img,
+video,html {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Cafe24Simplehae';
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #686666;
+     /* Prevent font scaling in landscape */
+
+     -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+     -moz-text-size-adjust: none; /*Firefox*/
+
+     -ms-text-size-adjust: none;  /*Ie*/
+
+     -o-text-size-adjust: none; /*old versions of Opera*/
+}
+
+#wrap {
+    min-width: 1400px;
+}
+#header{ 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+#top {
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+/* search */
+.my_page li:nth-child(1) {
+    position: relative;
+   }
+   .search_wrap{
+       position: absolute;
+       top: 0;
+       left: -150px;
+   }
+   .search_wrap input{
+       font-size: 14px;
+       width: 150px;
+       border: none;
+       padding: 10px 0;
+       border-bottom: 1px solid #686666;
+       outline: none;
+   }
+@keyframes login_point {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(1px);
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+.my_page li:nth-child(2) {
+    text-align: center;
+    position: relative;
+}
+
+.login_point_wrap {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: -22.21px;
+    animation: login_point 0.3s linear infinite;
+    transition: all 0.3;
+}
+
+.nav {
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+}
+.gnb {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    margin-left: 300px
+}
+
+.gnb li {
+    text-align: center;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 50px;
+}
+#visual{
+    margin: 120px auto;
+    height: 690px;
+    background: url(../images/about_us/main_visual.png) no-repeat center;
+}
+#container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.section{
+    width: 1320px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* section1 */
+.section1 .left_wrap{
+    width: 40%;
+    margin-top: 50px;
+}
+.section1 .number{
+    display: flex;
+    position: relative;
+    font-size: 60px;
+    font-weight: 900;
+}
+.section1 .icon_warp{
+    position: absolute;
+    top: -50px;
+    left: 120px;
+}
+.section1 h3{
+    font-size: 45px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.section1 ul li:nth-child(1){
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.section1 ul li:nth-child(2){
+    font-size: 18px;
+    white-space: pre-line;
+    line-height: 30px;
+}
+.section1 .right_wrap{
+    width: 700px;
+    height: 467px;
+        background: url(../images/about_us/shopping.jpg) center;
+        border-radius: 400px 0 0 400px;
+}
+/* section2 */
+.section2 .left_wrap{
+    width: 700px;
+    height: 467px;
+        background: url(../images/about_us/instargram_mokup.jpg) center;
+        border-radius: 0 400px 400px 0;
+}
+.section2 .number{
+    display: flex;
+    position: relative;
+    font-size: 60px;
+    font-weight: 900;
+}
+.section2 .icon_warp{
+    position: absolute;
+    top: -70px;
+    left: 120px;
+}
+.section2 h3{
+    font-size: 45px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.section2 ul{
+    font-size: 18px;
+    white-space: pre-line;
+    line-height: 30px;
+}
+.section2 .right_wrap{
+    width: 40%;
+    margin-top: 50px;
+}
+/* section3 */
+.section3 .left_wrap{
+    width: 40%;
+    margin-top: 50px;
+}
+.section3 .number{
+    display: flex;
+    position: relative;
+    font-size: 60px;
+    font-weight: 900;
+}
+.section3 .icon_warp{
+    position: absolute;
+    top: -80px;
+    left: 120px;
+}
+.section3 h3{
+    font-size: 45px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.section3 ul li{
+        white-space: pre-line;
+}
+.section3 ul li:nth-child(1){ 
+    line-height: 30px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.section3 ul li:nth-child(2){
+    font-size: 20px; 
+    line-height: 24px;
+}
+.section3 .right_wrap{
+    width: 700px;
+    height: 467px;
+        background: url(../images/about_us/shopping.jpg) center;
+        border-radius: 400px 0 0 400px;
+}
+#fashion_magezine_visual{
+    height: 400px;
+    background: url(../images/about_us/fashoin_magazine_visual.jpg) no-repeat center;
+}
+#word_fashoin_wrap{
+    width: 1320px;
+    margin: 100px auto;
+    position: relative;
+}
+.bg_g{
+    width: 800px;
+    height: 300px;
+    background-color: #b4b2b2;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    z-index: -1;
+}
+.bg_g>p{
+   padding-left: 320px;
+    font-size: 30px;
+    line-height: 38px;
+    white-space: pre-line;
+}
+#fashion_guide_wrap{
+    width: 1320px;
+    margin: 100px auto;
+}
+#footer{
+    background-color: #000;
+    color: #fff;
+}
+.inner_footer{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+    white-space: pre-line;
+    box-sizing: border-box;
+}
+.inner_footer ol{
+    display: flex;
+    justify-content: space-between;
+}
+.inner_footer ol li{
+    width: 29%;
+}
+.inner_footer span{
+    display: inline-block;
+    padding-top: 20px;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+.footer_icon_wrap{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_icon_wrap li:hover{
+    opacity: 0.5;
+}
+.footer_icon_wrap img{
+    width: 100%;
+}

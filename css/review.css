@@ -1,0 +1,271 @@
+@charset "utf8";
+
+/* webfont */
+@font-face {
+    font-family: 'Cafe24Simplehae';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+ul,
+img,
+video,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Cafe24Simplehae';
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #686666;
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+#wrap {
+    min-width: 1400px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+#top {
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+/* search */
+.my_page li:nth-child(1) {
+    position: relative;
+   }
+   .search_wrap{
+       position: absolute;
+       top: 0;
+       left: -150px;
+   }
+   .search_wrap input{
+       font-size: 14px;
+       width: 150px;
+       border: none;
+       padding: 10px 0;
+       border-bottom: 1px solid #686666;
+       outline: none;
+   }
+@keyframes login_point {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(1px);
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.my_page li:nth-child(2) {
+    text-align: center;
+    position: relative;
+}
+
+.login_point_wrap {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: -22.21px;
+    animation: login_point 0.3s linear infinite;
+    transition: all 0.3;
+}
+
+.nav {
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.gnb {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    margin-left: 300px
+}
+
+.gnb li {
+    text-align: center;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 50px;
+}
+@keyframes play_record {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#review{
+    height: 800px;
+    margin: 120px auto;
+    background: url(../images/review/photo_review_bg.jpg) no-repeat center;
+}
+.text_wrap{
+    text-align: center;
+    padding-top: 10px;
+}
+.text_wrap h3{
+   padding: 5px 0;
+}
+.photo_review{
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+}
+.photo_review li img{
+    display: block;
+    width: 100%;
+}
+/* slick */
+.slider {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current{
+  opacity: 1;
+   transform: translateY(50px);
+}
+
+#best_review{
+    height: 812px;
+    background: url(../images/review/best_review.png) no-repeat center;
+}
+#footer{
+    background-color: #000;
+    color: #fff;
+}
+.inner_footer{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+    white-space: pre-line;
+    box-sizing: border-box;
+}
+.inner_footer ol{
+    display: flex;
+    justify-content: space-between;
+}
+.inner_footer ol li{
+    width: 29%;
+}
+.inner_footer span{
+    display: inline-block;
+    padding-top: 20px;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+.footer_icon_wrap{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_icon_wrap li:hover{
+    opacity: 0.5;
+}
+.footer_icon_wrap img{
+    width: 100%;
+}
