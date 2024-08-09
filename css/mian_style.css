@@ -140,6 +140,7 @@ body {
     width: 1320px;
     margin: 20px auto;
     display: flex;
+    z-index:9999:
 }
 .gnb {
     display: flex;
