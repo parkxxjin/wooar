@@ -496,7 +496,8 @@ video{
 }
 #guide table span{
     display: flex;
-    justify-content: center;
+     justify-content: left;
+    padding-left: 15%;
 }
 #guide table span::before{
     content: "";
