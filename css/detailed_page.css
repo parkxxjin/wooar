@@ -536,6 +536,7 @@ video{
 #guide th{
     text-align: left;
     position: relative;
+    border-left:1px solid #686666;
 }
 #footer{
     background-color: #000;
